@@ -1,3 +1,7 @@
+    <!-- contact section start  -->
+    <?php get_template_part( 'includes/contact-sec.inc' ); ?>  <!--contact section -->
+    <!-- contact section end  -->
+    
     <!-- footer start  -->
     <footer class="bg-gray container-fluid">
         <!-- footer links start  -->

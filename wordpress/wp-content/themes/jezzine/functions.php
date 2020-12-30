@@ -11,6 +11,10 @@ register_nav_menus(
 		'main_menu' => 'Main Menu',
 	)
 );
+function limit_content_chr( $content, $limit=100 ) {
+    return mb_strimwidth( strip_tags($content), 0, $limit, '...' );
+}
+
 add_theme_support( 'post-thumbnails' );
 // add_filter('nav_menu_css_class' , 'my_nav_special_class' , 10 , 2);
 // 	function my_nav_special_class($atts, $item){

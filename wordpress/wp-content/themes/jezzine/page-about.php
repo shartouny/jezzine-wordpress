@@ -1,31 +1,18 @@
-<?php get_header(); ?>   <!-- header-->
+<?php get_header();$page = get_post(53); ?>   <!-- header-->
 <section id="president-msj-sec" class="mt-md-5 mt-2 p-md-5 p-2">
     <div class="container">
         <h2 class="middle-line">
-            <span class="text-right">رسالة الرئيس </span>
+            <span class="text-right"><?php echo $page->post_title; ?> </span>
         </h2>
         <div class="row mt-md-5 mt-2">
             <div class="col-md-3">
-                <img src="<?php echo get_stylesheet_directory_uri();?>/assets/pictures/president.png" alt="" class="img-fluid">
+                <img src="<?php echo get_the_post_thumbnail_url( get_the_ID(), 'large' )?>" alt="" class="img-fluid">
             </div>
             <div class="col-md-9">
-                <p>اخوتي في منطقة جزين، <br>
-                    لقد مرت منطقتنا بفترة صعبة منذ العام 1975، فمن حروب الى اجتياحات الى حصار، انقطعت هذه المنطقة عن الوطن فهُجر من هُجر وصمد من صمد. <br><br>
-
-                    لقد كان الانماء شبه غائب خلال هذه الحقبة، ولم توضع خطة طوارىء انمائية بعد عودة جزين الى كنف الدولة، فتفاقمت الازمة الاقتصادية وبالتالي تكاثرت الهجرة وبيع الاراضي. <br><br>
-
-                    اما اليوم وبعد استلامنا اتحاد بلديات منطقة جزين الذي يضم 26 بلدية، فقد قررنا ان نضع نصب اعيننا المشاكل وان نعمل جاهدين لايجاد الحلول المناسبة من خلال خطة منهجية واستراتيجية هدفها المحافظة على الارض واستثمارها بالطريقة الصحيحة مما يؤدي الى تنمية مستدامة وبالتالي انتعاشاً اقتصادياً. <br><br>
-
-                    اخوتي واهلي، لم تكن السياسة يوماً هدفاً في عملنا الانمائي وانما وسيلة للوصول الى اهداف سامية، وهل هناك من هدف اسمى من "المحافظة على الارض"؟
-                    <br><br>
-                    دعوتي لكم اليوم، هي الاتحاد في سبيل الانماء فلنضع خلافاتنا السياسية والعائلية جانباً ولنعمل سوية جاهدين بكل تجرد في سبيل انماء منطقة جزين والمحافظة على هويتها، "فللوطن هوية اذا فقدها، فقدناه".</p>
-            <p>رئيس اتحاد بلديات منطقة جزين</p>
-            <p class="signature">خليل حرفوش</p>
+                <p><?php echo $page->post_content;?></p>
+            <p class="signature"><?php echo get_post_meta(53)['field_at1nxb'][0]; ?></p>
             </div>
         </div>
     </div>
 </section>
-      
-        
-
 <?php get_footer(); ?>   

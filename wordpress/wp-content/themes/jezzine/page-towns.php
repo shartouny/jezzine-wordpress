@@ -387,6 +387,5 @@
 </section>
       
         
-<?php include 'includes/contact-sec.inc.php'; ?> <!--contact section -->
 <!-- page content end  -->
-<?php include 'includes/footer.inc.php'; ?>
+<?php get_footer(); ?>

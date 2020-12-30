@@ -293,6 +293,6 @@
       
         <?php get_template_part( 'includes/img-gallery.inc' ); ?>  <!--img-gallery section -->
         <?php get_template_part( 'includes/subscribe-sec.inc' ); ?>  <!--subscribe section -->
-        <?php get_template_part( 'includes/contact-sec.inc' ); ?>  <!--contact section -->
+        
         <?php get_footer(); ?>
     <!-- page content end  -->

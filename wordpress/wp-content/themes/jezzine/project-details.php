@@ -174,7 +174,6 @@
     </div>
 </section>
 <!-- other projects section end  -->
-<?php include 'includes/contact-sec.inc.php'; ?><!--contact section -->
 
 <!-- page content end  -->
-<?php include 'includes/footer.inc.php'; ?><!-- footer  -->
+<?php get_footer(); ?><!-- footer  -->
