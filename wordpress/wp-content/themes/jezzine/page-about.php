@@ -27,8 +27,5 @@
 </section>
       
         
-<?php include 'includes/img-gallery.inc.php'; ?> <!--img-gallery section -->
-<?php include 'includes/subscribe-sec.inc.php'; ?> <!--subscribe section -->
-<?php include 'includes/contact-sec.inc.php'; ?> <!--contact section -->
-<!-- page content end  -->
+
 <?php get_footer(); ?>   
