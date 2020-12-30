@@ -7,28 +7,32 @@
 				<span class="page-description"><?php echo get_search_query(); ?></span>
 			 </span>
         </h2>
+		<?php if ( have_posts() ) : 
+			// Start the Loop.
+			while ( have_posts() ) :
+				the_post();?>
+
         <div class="row mt-md-5 mt-2">
             <div class="col-md-3">
+
 				<img src="
 				<?php
 					// Must be inside a loop.
-					
-					if ( has_post_thumbnail() ) {
-						the_post_thumbnail();
-					}
-					else {
-						echo get_bloginfo( 'stylesheet_directory' ) . '/images/thumbnail-default.jpg';
-					}
+					echo get_the_post_thumbnail_url( get_the_ID() );
+					// if ( has_post_thumbnail() ) {
+						
+					// }
+					// else {
+					// 	echo get_bloginfo( 'stylesheet_directory' ) . '/assets/pictures/news-2.png';
+					// }
 					?>
 				" alt="" class="img-fluid">
             </div>
             <div class="col-md-9">
             	<p>
-				<?php if ( have_posts() ) : 
-			// Start the Loop.
-			while ( have_posts() ) :
-				the_post();
-
+				
+				
+<?php
 				/*
 				 * Include the Post-Format-specific template for the content.
 				 * If you want to override this in a child theme, then include a file

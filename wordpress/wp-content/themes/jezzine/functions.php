@@ -11,7 +11,7 @@ register_nav_menus(
 		'main_menu' => 'Main Menu',
 	)
 );
-
+add_theme_support( 'post-thumbnails' );
 // add_filter('nav_menu_css_class' , 'my_nav_special_class' , 10 , 2);
 // 	function my_nav_special_class($atts, $item){
 // 	if(in_array('menu-item-has-children',$atts)){ //example: you can check value of $item to decide something...
