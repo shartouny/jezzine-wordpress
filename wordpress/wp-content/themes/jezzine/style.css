@@ -1,0 +1,516 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+@font-face {
+    font-family: 'cairo-light';
+    src: url('assets/fonts/Cairo-Light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'ge-dinar-1-medium';
+    src: url('assets/fonts/GE-Dinar-One-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'din-next-lt-regular';
+    src: url('assets/fonts/DIN-NEXT-LT-ARABIC-REGULAR.TTF') format('truetype');
+    font-weight: normal;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'ge-dinar-2-medium';
+    src: url('assets/fonts/GE-Dinar-two-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'bshekari';
+    src: url('assets/fonts/Bshekari.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal
+}
+
+
+/* general styles start  */
+
+* {
+    box-sizing: border-box;
+    outline: none;
+    text-align: right;
+}
+
+.b-0 {
+    bottom: 0;
+}
+
+.l-0 {
+    left: 0;
+}
+
+body {
+    direction: rtl;
+    /* overflow-x: hidden; */
+}
+
+.owl-carousel {
+    direction: ltr;
+}
+
+.owl-carousel .row {
+    direction: rtl;
+}
+
+.owl-theme .owl-dots .owl-dot {
+    outline: none;
+}
+
+a:hover {
+    filter: brightness(80%);
+    text-decoration: none;
+}
+
+.social-icon {
+    background-color: #939598 !important;
+    color: #eee !important;
+    border-radius: 50%;
+    padding: 5px;
+    display: flex;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    margin: 1px;
+    align-items: center;
+    justify-content: center;
+}
+
+.z-0 {
+    z-index: 0;
+}
+
+.z-1 {
+    z-index: 1;
+}
+
+.z-2 {
+    z-index: 2;
+}
+
+.rtl {
+    direction: rtl;
+}
+
+.bg-shadow-dark {
+    background: rgba(76, 76, 76, 0);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.51) 49%, rgba(0, 0, 0, 0.5) 100%);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    left: 0;
+}
+
+.bg-light-gray {
+    background-color: #f6f6f6;
+}
+
+p,
+#subscribe form input::placeholder {
+    font-family: ge-dinar-2-medium, sans-serif;
+    color: #58595b;
+    font-size: .8rem;
+}
+
+@media (min-width: 768px) {
+    .position-md-absolute {
+        position: absolute;
+    }
+}
+
+ul.list-unstyled {
+    padding-inline-start: 0;
+}
+
+.img-fluid {
+    width: 100%;
+}
+
+
+/* general styles end  */
+
+
+/* header styles start  */
+
+
+/* header nav styles start  */
+
+#upper-bar img {
+    vertical-align: bottom;
+    max-height: 100px;
+    float: right;
+}
+
+a:not(.social-icon),
+header input {
+    font-family: din-next-lt-regular, sans-serif;
+    color: #6d6a6e;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+header input {
+    border-bottom: 1px solid #000000 !important;
+    border-top: 0 !important;
+    border-right: 0 !important;
+    border-left: 0 !important;
+    background-color: rgba(0, 0, 0, 0) !important;
+}
+
+header nav {
+    background-color: #e6e7e8;
+}
+
+header nav .dropdown-toggle {
+    position: relative;
+}
+
+header nav .dropdown>a::after {
+    display: none;
+    vertical-align: .255em;
+    content: "";
+    border-top: .3em solid #00a2d8;
+    border-right: .3em solid transparent;
+    border-bottom: 0;
+    border-left: .3em solid transparent;
+    position: absolute;
+    bottom: -0.45rem;
+    left: 50%;
+    margin-left: -.3em;
+}
+
+header nav .dropdown.show>a::after {
+    display: block;
+}
+
+header nav .dropdown {
+    position: initial;
+}
+
+header nav .dropdown-menu {
+    background-color: transparent;
+    background-clip: padding-box;
+    border: none;
+}
+
+.nav-item.active a,
+header nav .dropdown.show {
+    border-bottom: 2px solid #00a2d8;
+}
+
+.dropdown .dropdown-menu .nav-link {
+    border: none;
+}
+
+.dropdown .dropdown-menu .nav-item.active .nav-link {
+    color: #00a2d8;
+    border: none;
+}
+
+.dropdown-menu {
+    top: auto;
+}
+
+.dropdown-menu.show {
+    width: 100%;
+    display: flex;
+}
+
+
+/* header nav styles end  */
+
+
+/* header banner styles start  */
+
+.my-caption {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+
+.my-caption h3 {
+    font-family: ge-dinar-2-medium, sans-serif;
+    color: #ffffff;
+}
+
+.my-caption p {
+    font: roboto;
+    color: #a7a9ac;
+}
+
+
+/* header banner styles end  */
+
+
+/* header styles end  */
+
+
+/* projects section styles start  */
+
+h2.middle-line {
+    position: relative;
+}
+
+h2.middle-line span {
+    padding-left: 15px;
+    background-color: #ffffff;
+    z-index: 1;
+    position: relative;
+}
+
+h2.middle-line::after {
+    content: '';
+    background-color: #000000;
+    height: 1px;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    margin-top: -1px;
+}
+
+.project {
+    height: 450px;
+}
+
+p.date {
+    font-family: Roboto, sans-serif;
+}
+
+h3,
+h2 {
+    font-family: ge-dinar-2-medium, sans-serif;
+    color: #66686a;
+    font-size: 1.2rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+
+/* projects section styles end  */
+
+
+/* overview styles start  */
+
+#overview-sec h2.middle-line span,
+#img-gallery h2 span {
+    background-color: #f6f6f6;
+}
+
+#overview-sec p {
+    text-align: justify;
+}
+
+
+/* overview styles end  */
+
+
+/* members styles start  */
+
+#counsler-members-sec p {
+    margin: 1rem 0 1rem 0;
+}
+
+
+/* members styles end  */
+
+
+/* subscribe section styles start  */
+
+#subscribe-sec h3 {
+    color: #01a0d8;
+}
+
+#subscribe-sec a {
+    font-family: din-next-lt-regular, sans-serif;
+    color: #58595b;
+    text-decoration: underline;
+}
+
+#subscribe-sec form input[type=text] {
+    background-color: #f0f1f1 !important;
+}
+
+#subscribe-sec form input.btn {
+    border-radius: 0;
+}
+
+
+/* subscribe section styles end  */
+
+
+/* contact sec styles start  */
+
+.social-icon.bg-primary {
+    background-color: #049bd9 !important;
+}
+
+
+/* contact sec styles end  */
+
+
+/* footer styles start  */
+
+.bg-gray {
+    background-color: #939598;
+}
+
+footer .nav-link {
+    color: #ffffff;
+    font-family: din-next-lt-regular, sans-serif;
+}
+
+#copyright-sec p {
+    font-family: cairo-light, sans-serif;
+    color: #ffffff;
+}
+
+
+/* footer styles end  */
+
+
+/* about page style start  */
+
+#president-msj-sec p.signature {
+    font-family: bshekari, sans-serif;
+    font-size: 50px;
+}
+
+#president-msj-sec p {
+    font-size: .9rem;
+}
+
+
+/* about page style end  */
+
+
+/* services page style start  */
+
+#services-tbl .container>.row>div {
+    background-color: #e3e3e3;
+}
+
+#services-tbl a {
+    color: red;
+}
+
+#services-tbl a>img {
+    max-height: 40px;
+}
+
+#services-tbl .container>.row:nth-child(even)>div {
+    background-color: #f6f6f6;
+}
+
+
+/* services page style end  */
+
+
+/* news and projects styles start  */
+
+#news-slider .carousel-indicators {
+    position: initial;
+}
+
+.carousel-indicators li.active {
+    background-color: #d9393f;
+}
+
+.carousel-indicators li {
+    background-color: #aeaeae;
+}
+
+
+/* #news-slider .carousel-item p+.position-absolute{
+    margin: 20px;
+    padding: 0 15px;
+    width: 100%;
+} */
+
+.text-justify {
+    text-align: justify;
+}
+
+h2.mini {
+    font-size: 1.8rem;
+}
+
+nav>ul.pagination li.active .page-link {
+    background-color: #a0a0a0;
+}
+
+nav>ul.pagination li {
+    background-color: #f6f6f6;
+    margin: 2px;
+}
+
+nav>ul.pagination li a {
+    border: none;
+}
+
+
+/* news and projects styles end  */
+
+
+/* projects details styles start  */
+
+#other-projects .owl-theme .owl-dots .owl-dot span {
+    box-sizing: content-box;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+    width: 30px;
+    height: 3px;
+    margin-right: 3px;
+    margin-left: 3px;
+    text-indent: -999px;
+    cursor: pointer;
+    background-color: #aeaeae;
+    background-clip: padding-box;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    opacity: .5;
+    transition: opacity .6s ease;
+    border-radius: 0;
+}
+
+#other-projects .owl-theme .owl-dots .owl-dot.active span {
+    background-color: #d9393f;
+}
+
+
+/* projects details styles end  */
+
+
+/* towns page styles start  */
+
+#towns p {
+    color: #ffffff;
+}
+
+
+/* towns page styles end  */
+
+
+/* media queries start  */
+
+@media(max-width:1024px) {
+    h3 {
+        font-size: 1rem;
+    }
+}
+
+
+/* media queries end  */
