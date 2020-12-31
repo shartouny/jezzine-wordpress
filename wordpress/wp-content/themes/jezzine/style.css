@@ -440,7 +440,7 @@ footer .nav-link {
     width: 100%;
 } */
 
-.text-justify {
+.text-justify>* {
     text-align: justify;
 }
 

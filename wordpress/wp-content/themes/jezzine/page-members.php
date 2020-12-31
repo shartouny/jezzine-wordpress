@@ -19,8 +19,8 @@
                 $members = new WP_Query( $args ); 
                 
                 while($members->have_posts()){$members->the_post();
-                    $memberName = get_post_meta(get_the_ID()){'mem-name'}[0];
-                    $memberTown = get_post_meta(get_the_ID()){'mem-town'}[0];
+                    $memberName = get_post_meta(get_the_ID())['mem-name'][0];
+                    $memberTown = get_post_meta(get_the_ID())['mem-town'][0];
              ?>
 
             <div class="col-md-3">
