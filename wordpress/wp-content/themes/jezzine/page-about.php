@@ -10,7 +10,7 @@
             </div>
             <div class="col-md-9">
                 <p><?php echo $page->post_content;?></p>
-            <p class="signature"><?php echo get_post_meta(53)['field_at1nxb'][0]; ?></p>
+            <p class="signature"><?php echo get_post_meta(get_the_id())['field_at1nxb'][0]; ?></p>
             </div>
         </div>
     </div>

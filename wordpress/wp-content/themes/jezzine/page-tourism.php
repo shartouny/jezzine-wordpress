@@ -79,7 +79,6 @@
 </section>
 <!-- tourism section end  -->
 
-<?php include 'includes/contact-sec.inc.php'; ?><!--contact section -->
 
 <!-- page content end  -->
 <?php get_footer(); ?>            

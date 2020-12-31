@@ -1,10 +1,10 @@
-<?php get_header(); ?><!-- header-->
+<?php get_header(); $page = get_post(85); ?><!-- header-->
 <!-- page content start  -->
 
 <section id="projects-title" class="my-md-5 my-2">
     <div class="container">
         <h2 class="middle-line">
-            <span class="text-right">المشاريع</span>
+            <span class="text-right"><?php echo the_title(); ?></span>
         </h2>
         
     </div>
@@ -30,7 +30,7 @@
             <div class="bg-light-gray my-3">
             <div class="row">
                 <div class="col-lg-4 col-md-6">
-                    <img src="<?php echo get_the_post_thumbnail_url( get_the_id(), 'thumbnail' )?>" alt="" class="img-fluid">
+                    <img src="<?php echo get_the_post_thumbnail_url( get_the_id() )?>" alt="" class="img-fluid">
                 </div>
                 <div class="col-lg-8 col-md-6">
                     <div class="container">
@@ -45,11 +45,11 @@
                             } ?>
                         </p>
                         
-                        <h2 class="text-justify mini"><?php print the_title(); ?></h2>
+                        <h2 class="text-justify mini"><?php echo the_title(); ?></h2>
                         <p class="text-justify"><?php echo limit_content_chr( get_the_content(), 300 ); ?></p>
                         <div class="position-absolute m-3 px-3 w-100 b-0 l-0">
                             <div class="text-left">
-                                <a href="<?php the_permalink() ?>">إقرأ المزيد
+                                <a href="<?php the_permalink() ; _e('إقرأ المزيد')?>">
                                     <i class="fa fa-play-circle fa-rotate-180"></i>
                                 </a>
                             </div>
