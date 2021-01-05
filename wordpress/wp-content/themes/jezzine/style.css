@@ -249,6 +249,10 @@ header nav .dropdown.show {
     color: #a7a9ac;
 }
 
+#side-news .col-12:last-child {
+    margin: 0 !important;
+}
+
 
 /* header banner styles end  */
 

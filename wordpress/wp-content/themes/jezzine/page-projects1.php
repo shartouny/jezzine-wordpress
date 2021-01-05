@@ -49,7 +49,7 @@
                         <p class="text-justify"><?php echo limit_content_chr( get_the_content(), 300 ); ?></p>
                         <div class="position-absolute m-3 px-3 w-100 b-0 l-0">
                             <div class="text-left">
-                                <a href="<?php the_permalink() ; _e('إقرأ المزيد')?>">
+                                <a href="<?php the_permalink() ; ?>"><?php _e('إقرأ المزيد') ?>
                                     <i class="fa fa-play-circle fa-rotate-180"></i>
                                 </a>
                             </div>

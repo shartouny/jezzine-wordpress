@@ -1,4 +1,4 @@
-<?php get_header(); get_post(85); ?>   <!-- header-->
+<?php get_header(); get_posts(85); ?>   <!-- header-->
 
 
 <section id="counsler-members-sec" class="mt-md-5 mt-2 p-md-5 p-2">

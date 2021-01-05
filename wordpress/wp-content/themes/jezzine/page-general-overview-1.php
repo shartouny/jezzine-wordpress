@@ -1,4 +1,4 @@
-<?php get_header(); get_post(70);?>            
+<?php get_header(); get_posts(70);?>            
 <!-- header-->
 <section id="general-overview" class="mt-md-5 mt-2">
     <div class="container">

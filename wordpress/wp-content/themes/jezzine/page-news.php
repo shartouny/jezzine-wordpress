@@ -66,7 +66,7 @@
                                     $active = 'active';
                                 }
                         ?>
-                        <li data-target="#news-slider" data-slide-to="i" class="<?= $active; ?>"></li>
+                        <li data-target="#news-slider" data-slide-to=<?php echo $i; ?> class="<?= $active; ?>"></li>
                         <?php $i++; } wp_reset_postdata();?>
                     </ol>
                 </div>

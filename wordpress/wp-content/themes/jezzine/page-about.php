@@ -6,7 +6,7 @@
         </h2>
         <div class="row mt-md-5 mt-2">
             <div class="col-md-3">
-                <img src="<?php echo get_the_post_thumbnail_url( get_the_ID(), 'large' )?>" alt="" class="img-fluid">
+                <img src="<?php echo get_the_post_thumbnail_url( get_the_ID())?>" alt="" class="img-fluid">
             </div>
             <div class="col-md-9">
                 <p><?php echo $page->post_content;?></p>
