@@ -9,6 +9,7 @@ require_once get_template_directory() .'/includes/class-wp-bootstrap-navwalker.p
 register_nav_menus(
 	array(
 		'main_menu' => 'Main Menu',
+		'footer_menu' => 'Footer Menu'
 	)
 );
 function limit_content_chr( $content, $limit=100 ) {
